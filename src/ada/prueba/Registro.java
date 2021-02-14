@@ -1,12 +1,26 @@
 package ada.prueba;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Registro {
-    List<Automotor> autos;
+    List<Automotor> automotores;
 
-    public Registro(List<Automotor> autos) {
-        this.autos = autos;
+    public Registro() {
+        automotores = new ArrayList<>();
     }
-    //autos.add(new Auto());
+
+    public List<Automotor> getAutomotores() {
+        return automotores;
+    }
+
+    public void setAutomotores(List<Automotor> automotores) {
+        this.automotores = automotores;
+    }
+
+    public void agregarAutom(Automotor i){
+        automotores.add(i);
+    }
+
+
 }

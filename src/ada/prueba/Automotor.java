@@ -4,18 +4,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Automotor {
-    private String tipoDeUso; //particular o profesional
+    protected String tipoDeUso; //particular o profesional, boolean?
+    protected List<Persona> autorizados= new ArrayList<>();
+    protected Persona propietario= new Persona("Esteban", 33398548, "Larralde 332");
 
-    List<Persona> autorizados= new ArrayList<>();
-    Persona propietario1= new Persona("Juan minujin", 37067100, "Pichincha 3344 - Ituzaingó");
-    
 
-    public Automotor(String tipoDeUso, Persona propietario, List<Persona> autorizados) {
+    public Automotor(String tipoDeUso, Persona propietario) {
         this.tipoDeUso = tipoDeUso;
-        this.propietario1 = propietario;
+        this.propietario = propietario;
+    }
+
+    public String getTipoDeUso() {
+        return tipoDeUso;
+    }
+
+    public void setTipoDeUso(String tipoDeUso) {
+        this.tipoDeUso = tipoDeUso;
+    }
+
+    public List<Persona> getAutorizados() {
+        return autorizados;
+    }
+
+    public void setAutorizados(List<Persona> autorizados) {
         this.autorizados = autorizados;
     }
 
-    public Automotor(String tipoDeUso, String propietario) {
+    public Persona getPropietario() {
+        return propietario;
     }
+
+    public void setPropietario(Persona propietario) {
+        this.propietario = propietario;
+    }
+
+
+
 }
