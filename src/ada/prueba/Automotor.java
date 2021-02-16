@@ -5,9 +5,8 @@ import java.util.List;
 
 public class Automotor {
     protected String tipoDeUso; //particular o profesional, boolean?
-    protected List<Persona> autorizados= new ArrayList<>();
     protected Persona propietario= new Persona("Esteban", 33398548, "Larralde 332");
-
+    protected List<Persona> autorizados= new ArrayList<>();
 
     public Automotor(String tipoDeUso, Persona propietario) {
         this.tipoDeUso = tipoDeUso;
@@ -37,7 +36,6 @@ public class Automotor {
     public void setPropietario(Persona propietario) {
         this.propietario = propietario;
     }
-
 
 
 }

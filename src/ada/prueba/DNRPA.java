@@ -91,7 +91,8 @@ public class DNRPA {
         ituzaingo.agregarAutom(camion3);
 
 
-        System.out.println("Lista completa de todas las seccionales:"+automotores);
+        System.out.println(automotores.getClass(Auto));
+
 
 
 
